@@ -8,6 +8,7 @@
         "node": ">=10"
     },
     "scripts": {
+        "start": "cd demo && npm run dev",
         "build": "microbundle-crl --no-compress --format cjs",
         "clean": "rimraf dist"
     },
