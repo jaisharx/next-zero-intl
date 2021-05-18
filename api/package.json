@@ -1,0 +1,20 @@
+{
+    "name": "next-zero-intl-api",
+    "version": "1.0.0",
+    "description": "",
+    "source": "src/index.js",
+    "main": "dist/index.js",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "build": "microbundle --no-compress --format cjs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@vitalets/google-translate-api": "^7.0.0",
+        "microbundle": "^0.13.0"
+    }
+}
