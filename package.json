@@ -16,8 +16,8 @@
     "author": "Jai Sharma",
     "license": "MIT",
     "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0"
     },
     "devDependencies": {
         "@vitalets/google-translate-api": "^7.0.0",
