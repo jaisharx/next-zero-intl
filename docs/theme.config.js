@@ -15,7 +15,7 @@ export default {
     logo: (
         <>
             <svg>...</svg>
-            <span>Next.js Static Site Generator</span>
+            <span>Next Zero Intl - Zero Hassle Internationalization</span>
         </>
     ),
     head: (
