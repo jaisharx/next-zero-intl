@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import ChangeLocale from '../components/change-locale';
+
 import { useTranslation } from 'next-zero-intl';
 import Card from '../components/card';
+import ChangeLocale from '../components/change-locale';
 
 export default function Home() {
     const { t } = useTranslation();
@@ -20,9 +21,9 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <ChangeLocale />
                 <h1 className={styles.title}>
-                    {t('Welcome to')} <a href="https://nextjs.org">Next.js!</a>
+                    {t('Pick a Language.')}
+                    <ChangeLocale />
                 </h1>
 
                 <p className={styles.description}>
