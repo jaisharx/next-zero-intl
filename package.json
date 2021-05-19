@@ -1,6 +1,6 @@
 {
     "name": "next-zero-intl",
-    "version": "1.0.31",
+    "version": "1.0.34",
     "description": "",
     "source": "src/index.js",
     "main": "dist/index.js",
@@ -13,7 +13,7 @@
         "build": "microbundle-crl --no-compress --format cjs",
         "clean": "rimraf dist"
     },
-    "keywords": [],
+    "keywords": ["Internationalization", "Zero Config", "Next.js"],
     "author": "Jai Sharma",
     "license": "MIT",
     "peerDependencies": {
