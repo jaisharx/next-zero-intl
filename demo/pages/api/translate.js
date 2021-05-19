@@ -1,3 +1,3 @@
-import { handleTranslation } from '../../../api/dist/index';
+import { handleTranslation } from 'next-zero-intl/api';
 
 export default handleTranslation;

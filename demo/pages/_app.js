@@ -1,4 +1,4 @@
-import { TranslateProvider } from '../../dist/index';
+import { TranslateProvider } from 'next-zero-intl';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
