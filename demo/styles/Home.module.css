@@ -107,6 +107,11 @@
         width: 100%;
         flex-direction: column;
     }
+
+    .card {
+        width: auto;
+        margin: .4rem;
+    }
 }
 
 .select {
