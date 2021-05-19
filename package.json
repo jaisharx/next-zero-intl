@@ -1,6 +1,6 @@
 {
     "name": "next-zero-intl",
-    "version": "1.0.34",
+    "version": "1.0.35",
     "description": "",
     "source": "src/index.js",
     "main": "dist/index.js",
@@ -16,6 +16,10 @@
     "keywords": ["Internationalization", "Zero Config", "Next.js"],
     "author": "Jai Sharma",
     "license": "MIT",
+    "repository": {
+		"type": "git",
+		"url": "git@github.com:jaisharx/next-zero-intl.git"
+	},
     "peerDependencies": {
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
