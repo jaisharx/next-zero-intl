@@ -9,6 +9,7 @@
     },
     "scripts": {
         "start": "cd demo && npm run dev",
+        "docs": "cd docs && npm run dev",
         "build": "microbundle-crl --no-compress --format cjs",
         "clean": "rimraf dist"
     },
