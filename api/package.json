@@ -14,7 +14,9 @@
     "author": "",
     "license": "MIT",
     "devDependencies": {
-        "@vitalets/google-translate-api": "^7.0.0",
         "microbundle": "^0.13.0"
+    },
+    "dependencies": {
+        "@vitalets/google-translate-api": "^7.0.0"
     }
 }
