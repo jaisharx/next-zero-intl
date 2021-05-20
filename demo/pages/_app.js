@@ -1,12 +1,12 @@
-import { TranslateProvider } from 'next-zero-intl';
+import { TranslationProvider } from 'next-zero-intl';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
     
     return (
-        <TranslateProvider>
+        <TranslationProvider>
             <Component {...pageProps} />
-        </TranslateProvider>
+        </TranslationProvider>
     );
 }
 
