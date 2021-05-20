@@ -16,7 +16,7 @@ yarn add next-zero-intl
 
 ## Configuration
 
-First, you need to configure the `<TranslateProvider/>` in your \_app.js file.
+First, you need to configure the `<TranslationProvider/>` in your \_app.js file.
 
 ```js
 // pages/_app.js
