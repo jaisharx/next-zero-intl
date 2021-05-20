@@ -20,13 +20,13 @@ First, you need to configure the `<TranslateProvider/>` in your \_app.js file.
 
 ```js
 // pages/_app.js
-import { TranslateProvider } from 'next-zero-intl';
+import { TranslationProvider } from 'next-zero-intl';
 
 export default function MyApp({ Component, pageProps }) {
     return (
-        <TranslateProvider>
+        <TranslationProvider>
             <Component {...pageProps} />
-        </TranslateProvider>
+        </TranslationProvider>
     );
 }
 ```

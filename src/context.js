@@ -2,10 +2,10 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { getHashedString } from './lib/getHashedString';
 import { getTranslatedText } from './lib/getTranslatedText';
 
-const TranslateContext = createContext();
+const TranslationContext = createContext();
 
 let originalArrayCopy = []; // storing default locale textArray
-function TranslateProvider({ defaultLocale = 'en', children }) {
+function TranslationProvider({ defaultLocale = 'en', children }) {
     const [locale, setLocale] = useState(defaultLocale);
     let [textArray, setTextArray] = useState([]);
 
@@ -59,9 +59,9 @@ function TranslateProvider({ defaultLocale = 'en', children }) {
     }, [locale]);
 
     return (
-        <TranslateContext.Provider value={{ locale, setLocale, t }}>
+        <TranslationContext.Provider value={{ locale, setLocale, t }}>
             {children}
-        </TranslateContext.Provider>
+        </TranslationContext.Provider>
     );
 }
 
@@ -82,4 +82,4 @@ const useTranslation = () => {
     };
 };
 
-export { TranslateProvider, useLocale, useTranslation };
+export { TranslationProvider, useLocale, useTranslation };
