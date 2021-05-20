@@ -66,7 +66,7 @@ function TranslationProvider({ defaultLocale = 'en', children }) {
 }
 
 const useLocale = () => {
-    const { locale, setLocale } = useContext(TranslateContext);
+    const { locale, setLocale } = useContext(TranslationContext);
 
     return [
         locale,
@@ -75,7 +75,7 @@ const useLocale = () => {
 };
 
 const useTranslation = () => {
-    const { t } = useContext(TranslateContext);
+    const { t } = useContext(TranslationContext);
 
     return {
         t,
