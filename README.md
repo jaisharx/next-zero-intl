@@ -80,6 +80,9 @@ export default function ChangeLocale() {
 }
 ```
 
+Check out the full list of all the locales [here.](https://github.com/jaisharx/next-zero-intl/blob/main/demo/components/langs.js)
+
+
 ## Contributing
 
 Check the contributing guidlines [here]("").
