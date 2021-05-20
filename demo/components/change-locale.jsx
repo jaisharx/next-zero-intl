@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { LangSelectOptions } from './langs';
 
 export default function ChangeLocale() {
-    const { locale, setLocale } = useLocale();
+    const [locale, setLocale] = useLocale();
     const [selected, setSelected] = useState(locale);
 
     const onSelectHandler = (e) => {
