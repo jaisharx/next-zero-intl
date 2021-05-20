@@ -1235,10 +1235,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-zero-intl@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/next-zero-intl/-/next-zero-intl-1.2.0.tgz#35b7c89c88ff742c8b1e3ea84a016abc4159d359"
-  integrity sha512-tbwEpW6N8UaVpNnCJgxTFZIZ5E68AyfOlcXdhQVmkotuLQxe7rX2tyVnqOaMX4VedINtavqCYlGsxzGV4qb9Rw==
+next-zero-intl@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/next-zero-intl/-/next-zero-intl-1.2.1.tgz#3312113b6cc670c971f34b261a8310b317535157"
+  integrity sha512-VSuNh6IkIyDtN70oIB5YWyBMotm0mYnJTxdA2kgHeGuClw1Ge6NlsZJvUshDUBDfE7CaHcL6A8fGJKtCuVmT6Q==
   dependencies:
     "@vitalets/google-translate-api" "^7.0.0"
 
