@@ -68,10 +68,10 @@ function TranslateProvider({ defaultLocale = 'en', children }) {
 const useLocale = () => {
     const { locale, setLocale } = useContext(TranslateContext);
 
-    return {
+    return [
         locale,
         setLocale,
-    };
+    ];
 };
 
 const useTranslation = () => {

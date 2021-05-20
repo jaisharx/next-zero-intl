@@ -63,7 +63,7 @@ import { useLocale } from 'next-zero-intl';
 import { useState } from 'react';
 
 export default function ChangeLocale() {
-    const { locale, setLocale } = useLocale();
+    const [locale, setLocale] = useLocale();
     const [selected, setSelected] = useState(locale);
 
     const onSelectHandler = (e) => {
