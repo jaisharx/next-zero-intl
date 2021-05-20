@@ -6,11 +6,15 @@ Next Zero Intl is a next.js library built on top of google-translate-apis that y
 
 ```sh
 npm install next-zero-intl
-or
-yarn intall next-zero-intl
 ```
 
-## Adding
+or, if you're using yarn.
+
+```sh
+yarn add next-zero-intl
+```
+
+## Configuration
 
 First, you need to configure the `<TranslateProvider/>` in your \_app.js file.
 
@@ -78,8 +82,8 @@ export default function ChangeLocale() {
 
 ## Contributing
 
-Next Zero Intl is an open source projects that would love any community support. Check the contributing guidlines here.
+Check the contributing guidlines [here]("").
 
 ### License
 
-Next Zero Intl is [MIT licensed]('/LICENSE')
+Next Zero Intl is [MIT licensed]('https://github.com/jaisharx/next-zero-intl/blob/main/LICENSE')
