@@ -44,7 +44,7 @@ and that's it, you've successfully configured `next-zero-intl` in your next.js a
 
 ## Usage
 
-We provide you two simple hooks `useTranslations` & and `useLocale` to very simply add internationalization in your app. A simple example of how you'd use the translation hook is below.
+We provide you two simple hooks `useTranslation` & and `useLocale` to very simply add internationalization in your app. A simple example of how you'd use the translation hook is below.
 
 ```js
 import { useTranslation } from 'next-zero-intl';
