@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-zero-intl';
-import React from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Card({ url, title, children }) {
