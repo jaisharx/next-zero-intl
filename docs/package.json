@@ -8,6 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/node": "^16.4.13",
+    "@types/react": "^17.0.16",
+    "@types/react-dom": "^17.0.9",
     "next": "10.2.0",
     "nextra": "^0.4.4",
     "nextra-theme-docs": "^1.1.6",
