@@ -1,44 +1,18 @@
 {
-    "name": "next-zero-intl",
-    "version": "1.2.4",
-    "description": "",
-    "source": "src/index.tsx",
-    "main": "dist/index.js",
-    "engines": {
-        "node": ">=10"
-    },
-    "scripts": {
-        "start": "cd demo && npm run dev",
-        "docs": "cd docs && npm run dev",
-        "build": "microbundle-crl --no-compress --format cjs",
-        "clean": "rimraf dist"
-    },
-    "keywords": [
-        "Internationalization",
-        "Zero Config",
-        "Next.js"
-    ],
-    "author": "Jai Sharma",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:jaisharx/next-zero-intl.git"
-    },
-    "peerDependencies": {
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2"
-    },
-    "devDependencies": {
-        "microbundle-crl": "^0.13.11",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "rimraf": "^3.0.2"
-    },
-    "files": [
-        "dist",
-        "api/dist"
-    ],
-    "dependencies": {
-        "@vitalets/google-translate-api": "^7.0.0"
-    }
+  "name": "next-intl-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "*"
+  }
 }
