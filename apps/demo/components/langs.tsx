@@ -116,7 +116,7 @@ const LangSelectOptions = () => {
       </option>
     )
   }
-  return selectOptions
+  return <>{selectOptions}</>
 }
 
 export { langs, LangSelectOptions }
