@@ -1,6 +1,6 @@
 {
   "name": "next-zero-intl",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "dist/index.js",
   "author": "Jai Sharma",
   "license": "MIT",
@@ -22,7 +22,8 @@
     "react-dom": "^17.0.2"
   },
   "files": [
-    "dist"
+    "dist",
+    "api"
   ],
   "dependencies": {
     "@vitalets/google-translate-api": "^7.0.0"
