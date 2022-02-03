@@ -1,4 +1,4 @@
-import * as translate from '@vitalets/google-translate-api'
+const translate = require('@vitalets/google-translate-api')
 
 const handleTranslation = async (req, res) => {
   if (req.method === 'POST') {
@@ -16,4 +16,4 @@ const handleTranslation = async (req, res) => {
   }
 }
 
-export { handleTranslation }
+module.exports = { handleTranslation }
