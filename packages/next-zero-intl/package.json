@@ -15,7 +15,7 @@
     "config": "*",
     "parcel": "^2.2.1",
     "tsconfig": "*",
-    "@next-zero-intl/api": "*",
+    "next-zero-intl-api": "*",
     "typescript": "^4.5.3"
   },
   "peerDependencies": {
