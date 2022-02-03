@@ -33,3 +33,7 @@ yarn-error.log*
 
 # parcel
 .parcel-cache
+
+# dist 
+
+dist
