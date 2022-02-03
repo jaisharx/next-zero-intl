@@ -1,11 +1,12 @@
 {
   "name": "next-zero-intl",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "author": "Jai Sharma",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf dist",
+    "prepublish": "yarn build",
     "build": "yarn clean && parcel build index.tsx"
   },
   "devDependencies": {
