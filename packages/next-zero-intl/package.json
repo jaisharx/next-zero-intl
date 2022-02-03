@@ -5,9 +5,8 @@
   "author": "Jai Sharma",
   "license": "MIT",
   "scripts": {
-    "build:api": "tsc api/index.ts --outDir dist/api",
-    "build": "parcel build index.tsx",
-    "prepublish": "yarn build:api && yarn build"
+    "clean": "rm -rf dist",
+    "build": "yarn clean && parcel build index.tsx"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
