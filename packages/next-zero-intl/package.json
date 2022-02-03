@@ -5,14 +5,14 @@
   "types": "./index.tsx",
   "author": "Jai Sharma",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jaisharx/next-zero-intl.git"
+  "scripts": {
+    "build": "parcel index.tsx"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "config": "*",
+    "parcel": "^2.2.1",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   },
@@ -22,5 +22,9 @@
   },
   "dependencies": {
     "@vitalets/google-translate-api": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jaisharx/next-zero-intl.git"
   }
 }

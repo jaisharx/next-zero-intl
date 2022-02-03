@@ -2,7 +2,7 @@
 
 Next Zero Intl is a next.js library built on top of google-translate-apis that you can just drop in your projects, and internationalize your app/website with zero config. Checkout this demo. 👇
 
-[![Demo App](./src/assets/preview.png)](https://next-zero-intl-demo.vercel.app/)
+[![Demo App](./preview.png)](https://next-zero-intl-demo.vercel.app/)
 
 ## Installation
 
