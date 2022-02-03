@@ -51,9 +51,9 @@ We provide you two simple hooks `useTranslation` & and `useLocale` to very simpl
 ```js
 import { useTranslation } from 'next-zero-intl'
 
-const { t } = useTranslation()
 
 function SomeComponent() {
+  const { t } = useTranslation()
   render(<p>{t('Hello')}</p>)
 }
 ```
