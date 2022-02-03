@@ -9,13 +9,15 @@
     "prepublish": "yarn build",
     "build": "yarn clean && parcel build index.tsx"
   },
+  "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0"
+  },
   "devDependencies": {
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "config": "*",
     "parcel": "^2.2.1",
     "tsconfig": "*",
-    "next-zero-intl-api": "*",
     "typescript": "^4.5.3"
   },
   "peerDependencies": {
@@ -23,7 +25,8 @@
     "react-dom": "^17.0.2"
   },
   "files": [
-    "dist"
+    "dist",
+    "api"
   ],
   "repository": {
     "type": "git",
