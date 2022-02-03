@@ -22,14 +22,14 @@ First, you need to configure the `<TranslationProvider/>` in your \_app.js file.
 
 ```js
 // pages/_app.js
-import { TranslationProvider } from 'next-zero-intl';
+import { TranslationProvider } from 'next-zero-intl'
 
 export default function MyApp({ Component, pageProps }) {
-    return (
-        <TranslationProvider>
-            <Component {...pageProps} />
-        </TranslationProvider>
-    );
+  return (
+    <TranslationProvider>
+      <Component {...pageProps} />
+    </TranslationProvider>
+  )
 }
 ```
 
@@ -37,9 +37,9 @@ Now create a translate.js file inside next.js API directory, and add the followi
 
 ```js
 // pages/api/translate.js
-import { handleTranslation } from 'next-zero-intl/api';
+import { handleTranslation } from 'next-zero-intl/api'
 
-export default handleTranslation;
+export default handleTranslation
 ```
 
 and that's it, you've successfully configured `next-zero-intl` in your next.js app.
@@ -49,41 +49,40 @@ and that's it, you've successfully configured `next-zero-intl` in your next.js a
 We provide you two simple hooks `useTranslation` & and `useLocale` to very simply add internationalization in your app. A simple example of how you'd use the translation hook is below.
 
 ```js
-import { useTranslation } from 'next-zero-intl';
+import { useTranslation } from 'next-zero-intl'
 
-const { t } = useTranslation();
+const { t } = useTranslation()
 
 function SomeComponent() {
-    render(<p>{t('Hello')}</p>);
+  render(<p>{t('Hello')}</p>)
 }
 ```
 
 We try to be as less opinionated as possible, in order to change the text in above component, you can write a simple select component that uses `useLocale` hook.
 
 ```js
-import { useLocale } from 'next-zero-intl';
-import { useState } from 'react';
+import { useLocale } from 'next-zero-intl'
+import { useState } from 'react'
 
 export default function ChangeLocale() {
-    const [locale, setLocale] = useLocale();
-    const [selected, setSelected] = useState(locale);
+  const [locale, setLocale] = useLocale()
+  const [selected, setSelected] = useState(locale)
 
-    const onSelectHandler = (e) => {
-        setSelected(e.target.value);
-        setLocale(e.target.value);
-    };
+  const onSelectHandler = e => {
+    setSelected(e.target.value)
+    setLocale(e.target.value)
+  }
 
-    return (
-        <select onChange={onSelectHandler} value={selected}>
-            <option value="en">English</option>
-            <option value="hi">Hindi</option>
-        </select>
-    );
+  return (
+    <select onChange={onSelectHandler} value={selected}>
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+    </select>
+  )
 }
 ```
 
 Check out the full list of all the locales [here.](https://github.com/jaisharx/next-zero-intl/blob/main/demo/components/langs.js)
-
 
 ## Contributing
 

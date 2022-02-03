@@ -17,7 +17,7 @@ function TranslationProvider({ defaultLocale = 'en', children }) {
     const id = getHashedString(str)
 
     let hasId = false
-    textArray.forEach((textObj) => {
+    textArray.forEach(textObj => {
       if (textObj.id === id) hasId = true
     })
 
@@ -26,7 +26,7 @@ function TranslationProvider({ defaultLocale = 'en', children }) {
     }
 
     let text = ''
-    textArray.forEach((textObj) => {
+    textArray.forEach(textObj => {
       if (textObj.id === id) text = textObj.str
     })
 
@@ -47,11 +47,11 @@ function TranslationProvider({ defaultLocale = 'en', children }) {
 
     // locale is not default
     let AllText = ''
-    originalArrayCopy.map((textObj) => {
+    originalArrayCopy.map(textObj => {
       AllText += `${textObj.str}\n`
     })
 
-    getTranslatedText(AllText, locale).then((translatedText) => {
+    getTranslatedText(AllText, locale).then(translatedText => {
       const translatedtTextArray = translatedText.split('\n')
 
       const newTextArray = JSON.parse(JSON.stringify(textArray))
