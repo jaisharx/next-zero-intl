@@ -1,12 +1,13 @@
 {
   "name": "next-zero-intl",
   "version": "2.0.0",
-  "main": "./index.tsx",
-  "types": "./index.tsx",
+  "main": "dist/index.js",
   "author": "Jai Sharma",
   "license": "MIT",
   "scripts": {
-    "build": "parcel index.tsx"
+    "build:api": "tsc api/index.ts --outDir dist/api",
+    "build": "parcel build index.tsx",
+    "prepublish": "yarn build:api && yarn build"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
@@ -20,6 +21,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "@vitalets/google-translate-api": "^7.0.0"
   },
